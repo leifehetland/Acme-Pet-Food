@@ -1,10 +1,6 @@
 {
-  "name": "lib",
+  "name": "music-history-5",
   "version": "0.0.0",
-  "homepage": "https://github.com/leifehetland/Acme-Pet-Food",
-  "authors": [
-    "Lauren Rouse <lauren.l.rouse@gmail.com>"
-  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -14,8 +10,9 @@
     "tests"
   ],
   "dependencies": {
+    "bootstrap": "~3.3.5",
     "jquery": "~2.1.4",
-    "requirejs": "~2.1.20",
-    "bootstrap": "~3.3.5"
+    "lodash": "~3.10.1",
+    "requirejs": "~2.1.20"
   }
 }
