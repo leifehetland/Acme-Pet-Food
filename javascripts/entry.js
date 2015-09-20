@@ -20,5 +20,6 @@ require(["jquery", "hbs", "bootstrap", "firebase"],
   function($, Handlebars, bootstrap, firebase) {
 
 
+
   }
 );
