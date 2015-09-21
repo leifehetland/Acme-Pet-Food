@@ -5,18 +5,18 @@
     </h3>
     {{#each types as |Types|}}
     <p>
-      <h4>{{Types}}</h4>
-{{!--       {{each volumes}} --}}
+      <h4>{{Types.type}}</h4>
       <ul>
+      {{#each volumes}}
         <li>{{name}} for {{price}}</li>
-        <li>{{name}} for {{price}}</li>
+      {{/each}}
       </ul>
-      <h4>{{type}}</h4>
+      <h4>{{Type.type}}</h4>
       <ul>
-        <li>{{volumes.[.name}} for {{volumes.price}}</li>
+      {{#each volumes}}
         <li>{{volumes.name}} for {{volumes.price}}</li>
+      {{/each}}
       </ul>
-{{!--       {{/each}} --}}
     </p>
     {{/each}}
   </div>
