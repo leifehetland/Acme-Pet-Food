@@ -1,19 +1,23 @@
 {{#each dog_brands}}
-  <div class="col-sm-4">
+  <div class="col-sm-6">
     <h3>
         <a href="#">{{name}}</a>
     </h3>
+    {{#each types as |Types|}}
     <p>
-      <h4>{{types.type}}</h4>
+      <h4>{{Types}}</h4>
+{{!--       {{each volumes}} --}}
       <ul>
-        <li>{{types.name}} for {{types.price}}</li>
-        <li>{{types.name}} for {{types.price}}</li>
+        <li>{{name}} for {{price}}</li>
+        <li>{{name}} for {{price}}</li>
       </ul>
-      <h4>{{types.type}}</h4>
+      <h4>{{type}}</h4>
       <ul>
-        <li>{{types.name}} for {{types.price}}</li>
-        <li>{{types.name}} for {{types.price}}</li>
+        <li>{{volumes.[.name}} for {{volumes.price}}</li>
+        <li>{{volumes.name}} for {{volumes.price}}</li>
       </ul>
+{{!--       {{/each}} --}}
     </p>
+    {{/each}}
   </div>
 {{/each}}

@@ -3,7 +3,7 @@ define(["hbs",
 function(handlebars, dogTemplate) {
 
   var templates = {};
-  templates.product = dogTemplate;
+  templates.dogPdt = dogTemplate;
 
   return templates;
 
