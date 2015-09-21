@@ -23,8 +23,8 @@ var myFirebaseRef = new Firebase("https://acme-pet-food.firebaseio.com/");
 
 myFirebaseRef.child("dog_brands").on("value", function(snapshot) {
 
-var dog_brands = snapshot.val();
-console.log("dog_brands", dog_brands);
+  var dog_brands = snapshot.val();
+  console.log("dog_brands", dog_brands);
 });
 
   }
