@@ -1,0 +1,23 @@
+{{#each dog_brands}}
+  <div class="col-sm-6">
+    <h3>
+        <a href="#">{{name}}</a>
+    </h3>
+    {{#each types as |Types|}}
+    <p>
+      <h4>{{Types.type}}</h4>
+      <ul>
+      {{#each volumes}}
+        <li>{{name}} for {{price}}</li>
+      {{/each}}
+      </ul>
+      <h4>{{Type.type}}</h4>
+      <ul>
+      {{#each volumes}}
+        <li>{{volumes.name}} for {{volumes.price}}</li>
+      {{/each}}
+      </ul>
+    </p>
+    {{/each}}
+  </div>
+{{/each}}

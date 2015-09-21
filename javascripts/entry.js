@@ -16,14 +16,29 @@ require.config({
 });
 
 
-require(["jquery", "hbs", "bootstrap", "firebase"],
-function($, Handlebars, bootstrap, firebase) {
 
-  var myFirebaseRef = new Firebase("https://acme-pet-food.firebaseio.com/");
+require(["jquery", "hbs", "bootstrap", "firebase", "getTemplates"],
+  function($, Handlebars, bootstrap, firebase, templates) {
+    var allBrandsObject = {};
+    var allBrandsArray = [];
 
-  myFirebaseRef.child("dog_brands").on("value", function(snapshot) {
+    var myFirebaseRef = new Firebase("https://acme-pet-food.firebaseio.com/");
 
-    var dog_brands = snapshot.val();
-    console.log("dog_brands", dog_brands);
-  });
-});
+    myFirebaseRef.child("dog_brands").on("value", function(snapshot) {
+
+      var dog_brands = snapshot.val();
+      console.log("dog_brands", dog_brands);
+
+      for (var key in dog_brands) {
+        allBrandsArray[allBrandsArray.length] = dog_brands[key];
+        }
+
+      allBrandsObject= { dog_brands: allBrandsArray };
+      console.log("allBrandsObject", allBrandsObject);
+
+      $("#dog-brand").html(templates.dogPdt(allBrandsObject));
+
+    });
+
+  }
+);
