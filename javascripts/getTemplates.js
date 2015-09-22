@@ -1,11 +1,9 @@
 define(["hbs",
-        "hbs!../templates/dog_brands",
-        "hbs!../templates/cat_brands"],
-function(handlebars, dogTemplate, catTemplate) {
+        "hbs!../templates/brands"],
+function(handlebars, brandTemplate) {
 
   var templates = {};
-  templates.dogPdt = dogTemplate;
-  templates.catPdt = catTemplate;
+  templates.brandPdt = brandTemplate;
 
   return templates;
 
