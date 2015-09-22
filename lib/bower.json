@@ -13,6 +13,13 @@
     "bootstrap": "~3.3.5",
     "jquery": "~2.1.4",
     "lodash": "~3.10.1",
-    "requirejs": "~2.1.20"
-  }
+    "requirejs": "~2.1.20",
+    "handlebars": "~4.0.2",
+    "require-handlebars-plugin": "~1.0.0",
+    "firebase": "~2.2.9"
+  },
+  "homepage": "https://github.com/leifehetland/Acme-Pet-Food",
+  "authors": [
+    "jtmp2r <jtmp2r@gmail.com>"
+  ]
 }
