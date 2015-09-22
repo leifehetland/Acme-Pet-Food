@@ -6,12 +6,20 @@ body {
   background-position: center 50px;
   background-size: 90%;
   background-color: #FFDEAD;
+  font-family: "Comic Sans MS";
+  color: white;
 }
 
-#all-brands, h1.page-header {
+#cat-brands, #dog-brands, h1.page-header {
 	background-color: rgba(135,206,235,0.5);
 	border: dotted pink 5px;
 	border-radius: 5px;
 }
 
+.page-header{
+	text-align: center;
+}
 
+a:link {
+	color: white;
+}
