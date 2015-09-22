@@ -1,4 +1,15 @@
 body {
-  padding-top: 70px; }
+  padding-top: 70px;
+  background-image: url(http://kidslearningtogether.global2.vic.edu.au/files/2012/04/dog_002N-1jcvze8.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 50px;
+  background-size: 90%;
+  background-color: #FFDEAD; }
+
+#all-brands, h1.page-header {
+  background-color: rgba(135, 206, 235, 0.5);
+  border: dotted pink 5px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=main.css.map */
