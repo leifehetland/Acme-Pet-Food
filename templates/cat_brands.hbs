@@ -1,9 +1,10 @@
-<h1>something</h1>
-{{#each cat_brands}}
+<h2>Cat Products:</h2>
+{{#each catthings}}
   <div class="col-sm-6">
     <h3>
         <a href="#">{{name}}</a>
     </h3>
+    <small>{{breeds}}</small>
     {{#each types as |Types|}}
     <p>
       <h4>{{Types.type}}</h4>
@@ -16,3 +17,4 @@
     {{/each}}
   </div>
 {{/each}}
+
